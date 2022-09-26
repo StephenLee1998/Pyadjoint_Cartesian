@@ -1,0 +1,27 @@
+#### This config file is to set the paths needed for Cal adjoint source ###
+### Jan 25 2022 , li_chao 
+
+# Cal_type 
+# BPfilter : bandpass the observed and synthetic waveform to frequency band interseted .
+# SelectWindow
+cal_type : "SelectWindow"
+
+forward_info :
+  half_duration : "2400"
+  dt : "0.0001"
+  nstep : "25400"
+
+select_info :
+  snr_min : "20"
+  vmean : "1.0"
+
+bandpass : "2-6/5-9/8-12"
+
+# job_base : Dir contains run001,run002 ...... 
+archive_path : "/Users/li_chao/Desktop/process_code/archive"
+
+# eventlst
+eventlst : "./eventlst" 
+
+# obs_path : Dir contains EGFs obtained by Cross-correlation .
+obs_path : "/Users/li_chao/Desktop/process_code/SAC_Jiajika" 
